@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <div class="navbar bg-base-100 border shadow-xl flex sticky top-0 z-50">
+        <div class="ml-auto">
+            <ul class="menu menu-horizontal px-1 mr-4">
+                <li><a>HOME</a></li>
+                <li><a>PRODUCT</a></li>
+                <li><a>GALERY</a></li>
+                <li><a>BLOG</a></li>
+                <li><a>INVENTORY</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div class=" flex justify-center items-center pt-4">
+        <div class="max-w-4xl  bg-white p-10 rounded-lg shadow-lg flex items-center space-x-8 w-2/3 justify-between">
+
+            <div class="flex gap-10">
+                <!-- Bagian Kiri: foto-->
+                <div>
+                    <img class="h-40 w-40 rounded-full"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF21lPtzh8T3skVr2LYSIsPLP1tB4A_Tyflj5877l5dH_yY765"
+                        alt="Profile Picture">
+                </div>
+
+                <!-- Bagian nama dan button-->
+                <div class="flex-grow">
+                    <div class="mb-4">
+                        <h2 class="text-2xl font-bold">Nama Anda</h2>
+                        <p class="text-gray-500">Front End Designer</p>
+                    </div>
+                    <div class="space-x-2 mt-6">
+                        <button id="editBtn"
+                            class="btn bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">Edit</button>
+                        <button
+                            class="btn bg-white border border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-4 py-2 rounded-lg transition">Resume</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bagian Kanan: Informasi Detail -->
+            <div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr class="mb-4">
+                                <td class="font-bold pr-16 py-2">Availability</td>
+                                <td class="py-2">Full Time</td>
+                            </tr>
+                            <!-- row 2 -->
+                            <trc lass="mb-4">
+                                <td class="font-bold pr-12 py-2">Usia</td>
+                                <td class="py-2">19</td>
+                            </trc>
+                            <!-- row 3 -->
+                            <tr class="mb-4">
+                                <td class="font-bold pr-12 py-2">Lokasi</td>
+                                <td class="py-2">Jakarta</td>
+                            </tr>
+                            <!-- row 4 -->
+                            <tr class="mb-4">
+                                <td class="font-bold pr-12 py-2">Pengalaman</td>
+                                <td class="py-2">1</td>
+                            </tr>
+                            <!-- row 5 -->
+                            <tr class="mb-4">
+                                <td class="font-bold pr-12 py-2">Email</td>
+                                <td class="py-2">email@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section Form -->
+    <div id="formSection" class="flex justify-center items-center pt-4 pb-4 hidden">
+        <div class="max-w-4xl bg-white p-10 rounded-lg shadow-lg w-2/3">
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="name">Nama</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name" type="text" placeholder="Nama Anda">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="role">Role</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="role" type="text" placeholder="Front End Designer">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="availability">Availability</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="availability" type="Text" placeholder="Full Time">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="usia">Usia</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="Usia" type="Text" placeholder="19">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="lokasi">Lokasi</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="lokasi" type="Text" placeholder="Jakarta">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="yoe">Years Experience</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="yoe" type="Text" placeholder="2">
+                </div>
+                <div class="mb-4">
+                    <label class="block  text-sm font-bold mb-2" for="email">Email</label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email" type="email" placeholder="email@gmail.com">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="btn btn-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+
+    </script>
+
+</body>
+
+</html>
